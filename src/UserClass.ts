@@ -1,4 +1,5 @@
-import mysql from 'mysql2/promise'; // Use promise-based MySQL library
+import mysql from 'mysql2/promise';
+
 class UserClass {
     constructor(name: any, email: any) {
         this.name = name;
@@ -35,7 +36,11 @@ class UserClass {
     }
 
     userAddress() {
-        return ['user address']
+        return {
+            'country': 'Bangladesh',
+            'city': 'Dhaka',
+            'location': 'Mymensingh',
+        }
     }
 }
 
